@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* layout */
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    /* background-color: #f6f2ef; */
+    background-color: #fff;
+    color: #73736f;
+}
+.nav-link {
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.nav-active {
+    border-bottom: 1px solid #73736f;
+}
+.main_container{
+    background-color: #fbfaf9;
+}
+/* layout */
+
+/* dashboard */
+.tab{
+    background-color: #fff;
+}
+.tab button{
+    padding: 15px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 50%;
+    text-align: center;
+}
+.tab button:hover, .tab button.active{
+    background: #73736f;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.panel{
+    display: none;
+    /* border: 1px solid #73736f; */
+}
+.panel-active{
+    display:block;
+}
+article{
+    background-color: #fff;
+    cursor: pointer;
+}
+article:hover{
+    border: 1px solid #73736f;
+}
+article img{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+article .article_content{
+    border-bottom: 1px solid #ddd;
+}
+article .article_title{
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+article .article_link{
+    color: #73736f;
+    text-decoration: underline;
+}
+/* dashboard */
+
+/* table management */
+h1.title, .subtitle{
+    font-family: "Assistant", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.subtitle{
+    font-size: 18px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+table thead tr{
+    background: #73736f;
+    color: #fff;
+}
+table tr th, table tr td{
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px solid #7e7e7e;
+    vertical-align: top;
+}
+table img{
+    max-height: 300px;
+    width: 100%;
+}
+.pagination-active{
+    color: #7e7e7e;
+}
+/* table management */
+
+/* buttons */
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+.primary-btn{
+    background-color: #7e7e7e;
+    border: 1px solid #7e7e7e;
+}
+.primary-btn:hover{
+    color: #7e7e7e;
+    background-color: #fff;
+}
+
+.warning-btn{
+    background-color: #e2bb52;
+    border: 1px solid #e2bb52;
+}
+.warning-btn:hover{
+    color: #e2bb52;
+    background-color: #fff;
+}
+
+.danger-btn{
+    background-color: #e25252;
+    border: 1px solid #e25252;
+}
+.danger-btn:hover{
+    color: #e25252;
+    background-color: #fff;
+}
+
+.secondary-btn{
+    background-color: #fbfaf9;
+    border: 1px solid #fbfaf9;
+    color: #7e7e7e;
+}
+.secondary-btn:hover{
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+/* buttons */
+/* forms */
+input, select{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #7e7e7e;
+    margin-top: 10px;
+}
+/* forms */
