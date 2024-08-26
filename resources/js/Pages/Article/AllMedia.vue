@@ -16,7 +16,7 @@
         <div class="text-right my-2">
             <Link :href="route('article.create')" as="button" type="button" class="btn primary-btn">Create Article</Link>
         </div>
-        <table class="table-fixed">
+        <table class="">
             <thead>
                 <tr>
                     <th>Company</th>

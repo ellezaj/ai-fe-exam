@@ -36,6 +36,8 @@ header {
 .main_container{
     background-color: #fbfaf9;
 }
+
+
 /* layout */
 
 /* dashboard */
@@ -193,4 +195,19 @@ input, select{
     border: 1px solid #7e7e7e;
     margin-top: 10px;
 }
+.error{
+    color:red;
+}
 /* forms */
+@media (max-width: 640px) {
+    .main_container div{
+        width: 100% !important;
+    }
+    header {
+        display:none;
+    }
+    .grid{
+        width: 100% !important;
+        display: block;
+    }
+}

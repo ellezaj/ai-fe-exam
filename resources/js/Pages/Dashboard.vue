@@ -41,7 +41,7 @@
         </div>
         <div id="tabs-1" class="py-14 px-6 panel panel-active" aria-labelledby="tabs-1-tab-1" role="tabpanel" tabindex="0">
             <div class="">
-                <div class="grid grid-cols-3 gap-4 xs:grid-cols-12">
+                <div class="grid grid-cols-3 gap-4">
                     <article v-for="article in articles.data" :key="article.id"  class="m-1">
                         <div class="mb-4">
                             <img :src="article.image" alt="Article Image">

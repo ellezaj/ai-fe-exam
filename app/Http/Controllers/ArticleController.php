@@ -84,7 +84,7 @@ class ArticleController extends Controller
         $fields = $request->validate([
             'company' => ['required'],
             'title' => ['required'],
-            'link' => ['required', 'url'],
+            'link' => ['required'],
             'date' => ['required'],
             'content' => ['required'],
             'status' => ['required'],

@@ -3,13 +3,9 @@ import { Link, Head } from '@inertiajs/vue3';
 </script>
 
 <template>
-    <Head>
-        <title> Archintel Frontend Exam | Jazelle </title>
-    </Head>
-
     <div>
-        <header class="sticky top-0 z-10 mb-2" v-if="$page.props.auth.user">
-            <nav class="flex items-center justify-between p-4 max-w-screen-lg mx-auto">
+        <header class="sticky top-0 z-10 mb-2 sm:d-none" v-if="$page.props.auth.user">
+            <nav class="flex items-center justify-between p-4  mx-auto">
 
                 <div class="flex space-x-6">
                     <Link :href="route('dashboard')" class="nav-link" :class="{'nav-active': $page.component === 'Dashboard'}">Dashboard</Link>
@@ -31,7 +27,7 @@ import { Link, Head } from '@inertiajs/vue3';
             </nav>
         </header>
         <main class="main_container">
-            <div class="w-3/4 mx-auto xs:w-full py-4">
+            <div class="w-3/4 mx-auto py-4">
                 <slot/>
             </div>
         </main>

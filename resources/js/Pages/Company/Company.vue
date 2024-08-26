@@ -24,7 +24,7 @@
             <div class="text-right my-2">
                 <Link :href="route('company.create')" as="button" type="button" class="btn primary-btn">Create Company</Link>
             </div>
-            <table class="table-fixed">
+            <table class="">
                 <thead>
                     <tr>
                         <th>Logo</th>
